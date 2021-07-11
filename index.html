@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+
+
+
+
+
+
+
+
+
+
+
+body{
+margin :0px;
+padding: 0px;
+
+}
+
+header{
+background: url('https://image.freepik.com/free-vector/banking-service-background_127544-1086.jpg');
+height: 500px;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+
+.theme-text{
+color: white;
+text-align: left;
+display: inline-block;
+margin-top: 150px;
+margin-left: 100px;
+font-size: 15px;
+font-family: cursive;
+}
+
+.theme-button{
+border: none;
+background-color: orange;
+color: white;
+padding: 7px;
+text-align: center;
+border-radius: 10px;
+}
+
+
+.theme-button:hover{
+background-color: orangered;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: none;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.move-nav{
+ float: right;
+
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+.footer-distributed {
+    background-color: #000042;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+.footer-distributed h3 span {
+    color: orange;
+}
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-center {
+    width: 35%;
+}
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: white;
+    text-decoration: none;
+    
+}
+.footer-distributed .footer-right {
+    width: 30%;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+.footer-links a:hover {
+    color: #3F71EA;
+}
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="topnav" id="myTopnav">
+ <a href="#" class="active" style="font-family: Italic;">Sparks Bank</a>
+  <div class="move-nav">
+      <a href="index.html">Home</a>
+  <a href="transfermoney.php">Transfer</a>
+  <a href="contact_us.php">Contact</a>
+  <a href="about_us.php">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<header>
+<div class="theme-text">
+
+
+<h1 style="color: tomato; font-weight: 900; font-size: 35px;">Welcome to Sparks Bank</h1> <br>
+<p style="color: white">Let us take care of all your money needs.we are here for you.</p> <br>
+<button type="button" class="theme-button">Transfer</button>
+</div>
+</header>
+
+<h1 style="text-align: center; font-family: Lucida handwriting; font-size: 40px; margin-top: 20px; color: orange;">Our Features</h1> 
+<div class="new">
+
+
+<div class="container" style="margin-top: 60px; margin-left: 250px;">
+<div class="row">
+<div class="col-sm-4">
+<img src="https://tse4.mm.bing.net/th?id=OIP.jia848EGdXqbDESxaucqCAHaHa&pid=Api&P=0&w=300&h=300" style="width:170px;">
+<h1></h1>
+<a href="transfermoney.php" class="btn btn-primary btn-lg" style="margin-left: 25px; margin-top: 10px;"> View Customers</a>
+</div>
+<div class="col-sm-4">
+<img src="https://www.macatawabank.com/images/default-source/product-icons/largetransferfundsicon.png?sfvrsn=16afddd3_2" style="width:170px;">
+<h1></h1>
+<a href="transfermoney.php" class="btn btn-primary btn-lg" style="margin-left: 25px; margin-top: 10px;"> Transfer Money ></a>
+</div>
+<div class="col-sm-4">
+<img src="https://cdn0.iconfinder.com/data/icons/online-money-service-orchid-volume-2/256/Transaction_History-512.png" style="width:170px;">
+<h1></h1>
+<a href="transactionhistory.php" class="btn btn-primary btn-lg" style="margin-left: 25px; margin-top: 10px;"> Transaction Details</a>
+</div>
+</div>
+
+
+<br>
+<br>
+
+<div class="extra">
+<div class="container">
+<div class-"row">
+   <div class="col-sm-4" style="margin-top: 50px;">
+   <h2 style="font-family: cursive; color: orangered;">Why choose us?</h2> <br>
+    <p style="font-size: 17px; font-family: lucida handwriting; color: purple">Since online banking is one of the major services offered by banks, <br> it is also a highly secure platform. <br> Banks generally use encryption devices to ensure that all client information is protected <br> and there is no security breach. <br>It ultimately provides you security from online frauds and account hacking.</p>
+</div>
+<div class="col-sm-4">
+<img src="https://image.freepik.com/free-vector/bank-building-with-cityscape_1284-52265.jpg" style="width: 500px; height: 400px;">
+</div>
+</div>
+</div>
+</div>
+
+
+<br>
+<br>
+
+<div class="new-one">
+<div class="row">
+<div class="col-sm-4">
+<img src="https://cdn1.iconfinder.com/data/icons/round-color-icon/3/44-512.png" style="width: 150px;">
+<br>
+<h1 style="margin-left: 25px; font-family: cursive; color: crimson;">Security</h1>
+<p style="font-family: cursive;  font-size: 13px;">we will provide you high security</p>
+</div>
+<div class="col-sm-4">
+<img src="https://tse3.mm.bing.net/th?id=OIP.5qEmKUQGRNDaQP-CnxZo6QHaHa&pid=Api&P=0&w=300&h=300" style="width: 150px;">
+<h1 style="font-family: cursive; color: crimson;">Fast transaction</h1>
+<p style="font-family: cursive;  font-size: 13px;">You can transfer money easily and as well as faster</p>
+</div>
+<div class="col-sm-4">
+<img src="https://tse1.mm.bing.net/th?id=OIP.1z3szUiB9B-2Q64spi7pFAHaHa&pid=Api&P=0&w=300&h=300" style="width: 150px;">
+<h1 style="margin-left: 10px;  font-family: cursive; color: crimson;">No charges</h1>
+<p style="font-family: cursive;  font-size: 13px;">No additional charges for transfering Money</p>
+</div>
+</div>
+</div>
+
+<div class="container" style="width: 350px; height: 250px; margin-top: 30px;">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://image.freepik.com/free-vector/online-banking-background-design_1300-132.jpg"  style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://image.freepik.com/free-vector/banking-background-design_1223-62.jpg"  style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="https://image.freepik.com/free-vector/money-background-design_1212-560.jpg" style="width:100%;">
+      </div>
+    </div>
+
+   
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="new-footer">
+
+<footer class="footer-distributed">
+      <div class="footer-left">
+            <h3>Sparks<span>Bank</span></h3>
+               <p class="footer-links">
+                <a href="#">Home</a>
+                ||
+                <a href="#">About</a><br>
+                <a href="#">contact</a>
+                ||
+                <a href="#">Transfer</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>Sparks Bank</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>hytech</span>
+                    new city</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 98989898</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Sparks Bank</strong> is one the leading bank
+                 which was established in 2021. sparks bank provides great features and services for customers.
+            </p>
+            <div class="footer-icons">
+               
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
