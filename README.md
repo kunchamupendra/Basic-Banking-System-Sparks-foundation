@@ -11,6 +11,5 @@ Back-end : PHP
 
 Database : MySQL
 
-Database consists of two tables transaction and users
 
 apache server was set to run on port number 8080 of localhost and also MySQL was set on port number 3306.
